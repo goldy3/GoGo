@@ -27,7 +27,6 @@ func init() {
 		Endpoint:     google.Endpoint,
 	}
 }
-
 func main() {
 	r := gin.Default()
 	tmpl := template.Must(template.ParseFiles("templates/index.html"))
