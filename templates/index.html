@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ .Title }}</title>
+</head>
+<body>
+    <h1>{{ .Message }}</h1>
+    {{ if .LoggedIn }}
+        <p>You are logged in.</p>
+    {{ else }}
+        <a href="/login">Login with Google</a>
+    {{ end }}
+</body>
+</html>
